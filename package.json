@@ -1,5 +1,5 @@
 {
-  "name": "CompleteDynamicWebsite-1",
+  "name": "MyNotes-Project-1",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,12 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuditNema/CompleteWebsiteUsingExpressandREST.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuditNema/CompleteWebsiteUsingExpressandREST/issues"
+  },
+  "homepage": "https://github.com/MuditNema/CompleteWebsiteUsingExpressandREST#readme",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.2",
-    "method-override": "^3.0.0"
+    "method-override": "^3.0.0",
+    "mongodb": "^4.1.3"
   }
 }
