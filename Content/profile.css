@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(217, 240, 243);
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: 2px solid rgb(159, 214, 236);
+    background-color: white;
+    color: rgb(159, 214, 236);
+    border-radius: 8px;
+    font-size: 1.8vw;
+    margin: 0.3vw;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(159, 214, 236);
+    color: white;
+}
+.nav-bar{
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    height: 4vw;
+    color:white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+h3{
+    margin: 0;
+    font-size: 2vw;
+}
+.add-note,.show-notes{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.elem,.show-elem{
+    width: 60%;
+    margin: auto;
+}
+.elem textarea{
+    width: 100%;
+    margin: auto;
+    font-size: 1.2vw;
+    outline: none;
+    background-color: white;
+}
+.elem textarea:focus{
+    outline:2px solid rgb(217, 190, 243);
+}
+.show-elem{
+ border: 2px solid rgb(155, 154, 154);
+ padding: 0.4vw;
+ border-radius: 2vw;
+ box-shadow: 8px 8px 8px 0px rgba(90, 90, 90, 0.75);
+ font-size: 1.5vw;
+ background-image: linear-gradient(to right , rgb(222, 183, 240),rgb(164, 209, 235));
+}
+
+h2{
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 4px;
+    margin: 2px;
+    color: rgb(117,117,117);
+    background-color: rgb(187, 221, 232);
+    width: fit-content;
+    margin: auto;
+    border: 2px solid #e4b7b7;
+    border-radius: 1vw;
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+.show-elem p{
+    color: rgb(39, 39, 39);
+}
+.show-notes{
+    margin-bottom: 2vw;
+}
+.footer,.footer p{
+    background-color: rgb(56, 56, 83);
+    color: rgb(240, 238, 238);
+    font-size: 1.3vw;
+}
+.footer{
+    margin: 0;
+    margin-top:auto;
+}
+
+.techs,.author{
+    margin: auto;
+    width: fit-content;
+}
+
+.techs p,.author p{
+    display: inline;
+    line-height: 2.5vw;
+}
+.techs img{
+    width: 2vw;
+    height: 2vw;
+    display: inline;
+    margin: 0;
+    padding: 0 0.6vw;
+    position: relative;
+    top: 0.5vw;
+}
+.author a{
+    text-decoration: none;
+    background-color: rgb(56, 56, 83);
+    color: rgb(240, 238, 238);
+    font-size: 1.3vw;
+    
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}</title>
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="shortcut icon" href="https://pngimg.com/uploads/notebook/notebook_PNG19192.png" type="image/png">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h3>Welcome {{name}}</h3>
+    </div>
+    <div class="add-note">
+        <h2>Add a Note</h2>
+        <form action="/add" onsubmit="return Zerolength();" method="POST">
+            <div class="text elem">
+                <textarea name="addtext" id="addtxt" cols="50" rows="10"></textarea>
+            </div>
+            <div class="elem">
+                <button id="add-note">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="show-notes" id="show-notes">
+        <!-- Class -> show-elem is used to show a single note and we add mulitple of these using javascript and database-->
+        {{!-- <div class="show-elem">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsa reprehenderit atque natus quas
+                molestias illum laudantium? Impedit, alias dolorem!</p>
+            <button id="${obj.count}">Delete</button>
+        </div> --}}
+        
+        {{{notesData}}}
+    </div>
+    <div class="footer">
+        <div class="techs">
+            <p>
+            Technologies used : 
+
+            </p>
+            <img src="./Techs/html.png" alt="">
+            <img src="./Techs/css.png" alt="">
+            <img src="./Techs/js.png" alt="">
+            <img src="./Techs/node.png" alt="">
+            <img src="./Techs/mongo.png" alt="">
+        </div>
+        <div class="author">
+            <p> Created by : <a href="https://www.linkedin.com/in/mudit-nema-242a85210/">Mudit Nema </a> </p>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./validation.js"></script>
+</body>
+
+</html>

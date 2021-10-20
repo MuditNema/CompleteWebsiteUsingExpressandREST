@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* width: 100%; */ 
+    font-family: 'Andada Pro', serif;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right , rgb(222, 183, 240),rgb(164, 209, 235));
+}
+.outer{
+    position: relative;
+    height: 44vw;
+    width: 99vw;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    width: 38%;
+    height: 75%;
+    position: absolute;
+    /* border: 2px solid red; */
+    background-color: white;
+    border-radius: 10%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.top-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+.top-btn button , .register-btn,.login-btn{
+    width: 8vw;
+    height: fit-content;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border: 1px solid rgb(107, 188, 235);
+    background-color: white;
+    color: rgb(107, 188, 235);
+    border-radius: 4vw;
+    font-family: 'Bebas Neue', cursive;
+}
+.top-btn button:hover{
+    background-color: rgb(107, 188, 235);
+    cursor: pointer;
+    color: white;
+}
+
+label{
+    text-align: center;
+}
+.user-inputs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    color: grey;
+}
+.form-element{
+    position: absolute;
+    width: 70%;
+}
+.d-none{
+    display: none;
+}
+.user-inputs form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.user-inputs button{
+    margin-top: 3vw;
+}
+.elem{
+    margin:0.2vw;
+    font-size: 1.6vw;
+    padding: 0.1vw;
+}
+.login,.registration{
+    margin:0.2vw;
+    font-size: 1.6vw;
+}
+.user-inputs input{
+    border: none;
+    border-bottom: 2px solid grey;
+    height: 1.2vw;
+    /* padding: 0.4vw; */
+    font-size: 1.2vw;
+    font-family: 'Andada Pro', serif;
+}
+input:focus{
+    outline: none;
+}
+.register-btn,.login-btn{
+    padding: 0.5vw;
+    color:#94b88a;
+    background-color: #dff3d9;
+    border: 2px solid #94b88a;
+    margin: auto;
+}
+.register-btn:hover,.login-btn:hover{
+    background-color: #94b88a;
+    cursor: pointer;
+    color: #dff3d9;
+}
+
+p{
+    width: inherit;
+    margin: 5px auto ;
+    text-align: center;
+    color: red;
+    font-size: 0.8vw;
+}
+
+.footer,.footer p{
+    background-color: rgb(56, 56, 83);
+    color: rgb(240, 238, 238);
+    font-size: 1.3vw;
+}
+.footer{
+    margin: 0;
+    margin-top:auto;
+}
+
+.techs,.author{
+    margin: auto;
+    width: fit-content;
+}
+.techs p,.author p{
+    display: inline;
+    line-height: 2.5vw;
+}
+.techs img{
+    width: 2vw;
+    height: 2vw;
+    display: inline;
+    margin: 0;
+    padding: 0 0.6vw;
+    position: relative;
+    top: 0.5vw;
+}
+.author a{
+    text-decoration: none;
+    background-color: rgb(56, 56, 83);
+    color: rgb(240, 238, 238);
+    font-size: 1.3vw;
+    
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://pngimg.com/uploads/notebook/notebook_PNG19192.png" type="image/png">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <!-- Inside this top-btn div , we are going to add the choice whether the user want to login or signup -->
+            <div class="top-btn">
+                <button id="log">Login</button>
+                <button id="reg">Register</button>
+            </div>
+            <!-- Inside this user-inputs div , we are going to ask for the inputs through a form and save it in our database (MongoDB) -->
+            <div class="user-inputs">
+                <div class="login form-element" id="form-login">
+                    <form action="/login" method="POST">
+                        <label class="elem" for="username">UserName</label>
+                        <input class="elem" type="text" name="username" required>
+                        <label class="elem" for="password">Password</label>
+                        <input class="elem" type="password" name="pass" required>
+                        <button class="elem login-btn" style="margin: auto;margin-top:4vw;">Login</button>
+                    </form>
+                </div>
+                <div class="registration form-element d-none" id="form-registration">
+                    <form action="/signup" onsubmit="return Validate()" method="POST">
+
+                        <label class="elem" for="email">Email</label>
+                        <input id="email"class="elem" type="email" name="email" required>
+                        <p id="mail-error" class="error"></p>
+
+                        <label class="elem" for="username">UserName</label>
+                        <input class="elem" id="username" type="text" name="username" required>
+                        <p id="name-error" class="error"></p>
+
+                        <label class="elem" for="password">Password</label>
+                        <input class="elem" type="password" id="password" name="pass" min="5" required>
+                        <p id="password-error" class="error"></p>
+
+                        <button class="elem register-btn" id="register-user">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="techs">
+            <p>
+            Technologies used : 
+
+            </p>
+            <img src="./Techs/html.png" alt="">
+            <img src="./Techs/css.png" alt="">
+            <img src="./Techs/js.png" alt="">
+            <img src="./Techs/node.png" alt="">
+            <img src="./Techs/mongo.png" alt="">
+        </div>
+        <div class="author">
+            <p> Created by : <a href="https://www.linkedin.com/in/mudit-nema-242a85210/">Mudit Nema </a> </p>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./validation.js"></script>
+</body>
+
+</html>
